@@ -4,11 +4,7 @@ DEPLOYED URL HERE
 
 ## Project Description
 
-PROJECT DESCRIPTION HERE
-
-## Code Snippet
-
-CODE SNIPPET HERE
+For the generation invested in technology and the advances it brings, something as old school as reading a book has increasingly become out of touch. In the age of Google and Wikipidea, there is no lack of information. But the reading aspect of it has yet to evolve. This app revolutionizes the primitive way of reading and trains your cognative ability to comprehend words at a faster rate. Statistically speaking, learning something is done most effectively at 200 words per min, understanding at 400 words per min, and revising at 600 words per min. Speed Read lets you control the flow of information, suited and customized to your needs and abilities. 
 
 ## Wireframes
 
@@ -17,6 +13,10 @@ WIREFRAM IMAGE HERE
 ## Component Hierarchy
 
 COMPONENET HIERARCHU HERE
+
+## Code Snippet
+
+CODE SNIPPET HERE
 
 ## API and Data Sample
 
