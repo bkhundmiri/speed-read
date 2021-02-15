@@ -8,7 +8,7 @@ For the generation invested in technology and the advances it brings, something 
 
 ## Wireframes
 
-![Wireframe](Assets/)
+![Wireframe](Assets/Wireframe.png)
 
 ## Component Hierarchy
 
