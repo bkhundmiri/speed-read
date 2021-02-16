@@ -96,16 +96,17 @@ createdTime: "2021-02-16T00:20:11.000Z"
 
 ### Strengths:
 
-
+Going into this project I know my strengths are going to be the design and content placement aspects. I have a mental picture of what exactly my application
+will look like so i know I wont falter too much on where and what I'd like to do. 
 
 ### Weaknesses:
 
-
+My last project, I had finished functionality within the first day but for this project I'd like to work on the JavaScript portion. I chose a specifially difficult functionality to do just this. I have a fair sense on how I'm going to work around hurdles I might encounter but I'm looking forward to learning new tricks.
 
 ### Opportunities:
 
-
+This project will mold me into a better JavaScript coder. The problems I have a faint idea that I will face will definetly improve and harden my resourcefulness and problem solving skills.
 
 ### Threats:
 
-
+There are certain things that before starting this project i feel like i will get stuck on. The display of words one at a time from a paragraph pulled from the Airtable will be tough. But JavaScript functionality aside, I know I will overcome it.
