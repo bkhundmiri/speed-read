@@ -4,7 +4,7 @@ DEPLOYED URL HERE
 
 ## Project Description
 
-For the generation invested in technology and the advances it brings, something as old school as reading a book has increasingly become out of touch. In the age of Google and Wikipidea, there is no lack of information. But the reading aspect of it has yet to evolve. This app revolutionizes the primitive way of reading and trains your cognative ability to comprehend words at a faster rate. Statistically speaking, learning something is done most effectively at 200 words per min, understanding at 400 words per min, and revising at 600 words per min. Speed Read lets you control the flow of information, suited and customized to your needs and abilities. 
+If you're a part of the generation invested in technology and the advances it brings, you'll notice that sometimes, something as old school as reading a book, seems extremely out of touch. In the age of Google and Wikipidea, there is no lack of information. But the actual act of reading has yet to evolve. This app revolutionizes the primitive way of reading and trains your cognative ability to comprehend words at a faster rate. Statistically speaking, learning something is done most effectively at 200 words per min, understanding at 400 words per min, and revising at 600 words per min. Speed Read lets you control the flow of information, suited and customized to your needs and abilities. 
 
 ## Wireframes
 
