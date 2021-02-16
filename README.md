@@ -20,8 +20,6 @@ CODE SNIPPET HERE
 
 ## API and Data Sample
 
-LINK TO AIRTABLE HERE
-
 This project uses the Airtable CMS and returns data in JSON format as follows:
 
 ```
