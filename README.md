@@ -12,7 +12,7 @@ For the generation invested in technology and the advances it brings, something 
 
 ## Component Hierarchy
 
-COMPONENET HIERARCHU HERE
+![Heirarchy](Assets/Heirarchy.png)
 
 ## Code Snippet
 
