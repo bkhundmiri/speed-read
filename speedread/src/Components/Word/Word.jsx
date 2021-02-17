@@ -1,50 +1,39 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
+import "./Word.css"
 
 export default function Word (props) {
-    const [word, setWord] = useState("")
+    const [word, setWord] = useState(" ")
     const [triggerWord, setTriggerWord] = useState(false)
+    const [speed, setSpeed]  = useState(500)
     const params = useParams()
+    
+    function displayWord () {
+        setWord(props.wordArr.shift())
+    }
 
     useEffect(() => {
-        let interval1
-        if (props.wordArr.length > 0) {
-            interval1 = setInterval(displayWord, 1000)
-            return interval1
+        if (!triggerWord || props.wordArr.length === 0) {
+            return
         } else {
-            stopInterval1()
+            setTimeout(displayWord, 1000 - speed)
         }
 
-        function displayWord () {
-            setWord(props.wordArr.shift())
-            console.log(props.wordArr.shift());
-        }
-
-        function stopInterval1 () {
-            clearInterval(interval1)
-        }
-
-    },[triggerWord])
+    },[triggerWord, word])
     
+    function play () {
+        setTriggerWord((curr) => !curr)
+    } 
+
     return (
-        <div> Loading </div>
+        <div>
+            <div className="word-box"> 
+                <div className="word">
+                    {word}
+                </div>
+            </div>
+            <input type="range" min="150" max="850" step="25" value={speed} onChange={(e) => setSpeed(e.target.valueAsNumber)}/>
+            <button onClick={play}>{triggerWord ? "stop" : "play"}</button>
+        </div>
     )
-    // console.log(props.wordArr);
-    // if (props.wordArr.length > 0 && params.id) {
-    //     const displayWords = setInterval(() => {
-    //         setWord(props.wordArr.shift())
-    //         console.log(word);
-    //     }, 2000);
-    //     return (
-    //         <div>
-    //             <div>Read Here: </div>
-    //             <div>
-    //                     <div>{word}</div>
-    //                     <button onClick={clearInterval()}>Stop</button>
-    //             </div>
-    //         </div>
-    //     )
-    // } else {
-    //     return <div>Loading...</div>
-    // }
 } 

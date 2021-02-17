@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Word from "../Word/Word"
+import "./Read.css"
 
 export default function Read (props) {
     const params = useParams();

@@ -1,0 +1,14 @@
+.word-box {
+    padding: 100px;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border: 2px solid rgba(3, 22, 52, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.word {
+    font-size: 30px;
+}
