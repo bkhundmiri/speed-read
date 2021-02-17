@@ -21,9 +21,7 @@ When a play button is pressed, a single word from the array of words is printed 
 
 ## Documentation
 
-```md
-![Wireframe](Assets/Wireframe.png) 
-```
+![Issue1](Assets/Issues/Screen Shot 2021-02-17 at 11.22.22 AM.png)
 
 ## Attempted Resolution
 
