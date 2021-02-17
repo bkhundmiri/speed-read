@@ -4,21 +4,21 @@ import Word from "../Word/Word"
 export default function Read (props) {
     const params = useParams();
 
-    let foundRead = props.reads.find((read) => read.id === params.id);
+    let foundRandomRead = props.reads.find((read) => read.id === params.id);
 
-    if (!foundRead) {
+    if (!foundRandomRead) {
         return <h4>wtf Loading....</h4>;
     }
 
-    const wordArr = foundRead.fields.content.split(" ")
+    const wordArr = foundRandomRead.fields.content.split(" ")
     console.log(wordArr)
 
     return (
         <div>
             <div>
-                <h1>Reading {foundRead.fields.title}</h1>
-                <h2>{foundRead.fields.title}</h2>
-                <p>{foundRead.fields.author}</p>
+                <h1>Random Read</h1>
+                <h2>{foundRandomRead.fields.title}</h2>
+                <p>{foundRandomRead.fields.author}</p>
             </div>
             <div className="word-bank">
                 <Word wordArr={wordArr}/>

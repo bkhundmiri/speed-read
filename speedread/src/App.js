@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Form from "./Components/Form/Form"
 import Read from "./Components/Read/Read"
+import ReadRandom from "./Components/ReadRandom/ReadRandom"
 import axios from 'axios';
 
 function App() {
@@ -23,19 +24,25 @@ function App() {
 
   return (
     <div className="App">
+      
       <Navbar reads={reads}/>
+
       <Route exact path="/">
         <Home reads={reads}/>
       </Route>
+
       <Route path="/new">
         <Form reads={reads} setToggleFetch={setToggleFetch}/>
       </Route>
+
       <Route exact path="/read/random/:id">
-        <Read reads={reads} setToggleFetch={setToggleFetch}/>
+        <ReadRandom reads={reads} setToggleFetch={setToggleFetch}/>
       </Route>
+
       <Route exact path="/read/:id">
         <Read reads={reads} setToggleFetch={setToggleFetch}/>      
       </Route>
+
       <Route path="/edit/:id">
         <Form reads={reads} setToggleFetch={setToggleFetch}/>
       </Route>
