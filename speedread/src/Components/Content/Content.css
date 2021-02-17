@@ -1,0 +1,42 @@
+.read-container {
+    padding: 10px 20px;
+    background: #eaeaea;
+    max-width: 80%;
+    height: 170px;
+    margin: 20px auto;
+}
+
+.paragraph {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    text-align: justify;
+    
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-author-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: -13px;
+}
+
+.author {
+    font-style: italic;
+}
+
+.buttons-wrapper {
+    display: flex;
+    align-items: center;
+}

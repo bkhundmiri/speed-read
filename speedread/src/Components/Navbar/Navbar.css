@@ -1,0 +1,30 @@
+nav {
+    height: 70px;
+    background-color: rgba(3, 22, 52, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .pages, .home {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    margin-left: 10px;
+}
+
+.pages {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 16px 30px;
+}
+
+nav a:hover {
+    background-color: #E8DDCB;
+    color: rgba(3, 22, 52, 1);
+}
