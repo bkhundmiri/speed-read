@@ -1,0 +1,51 @@
+.input-form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px 0;
+    background-color: rgba(205, 179, 128, 1);
+    border-left: rgba(205, 179, 128, 1) 20px solid;
+    border-right: rgba(205, 179, 128, 1) 20px solid;
+    border-top: rgba(205, 179, 128, 1) 10px solid;
+    border-bottom: rgba(205, 179, 128, 1) 10px solid;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 2px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+textarea {
+    width: 100%;
+    margin: 8px 0;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea:focus {
+    border: 2px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+
+label {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10px;
+}

@@ -1,0 +1,7 @@
+footer {
+    height: 70px;
+    background-color: rgba(3, 22, 52, 1);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}

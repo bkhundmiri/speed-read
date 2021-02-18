@@ -1,8 +1,8 @@
 .read-container {
     padding: 10px 20px;
     background: #eaeaea;
-    max-width: 80%;
-    height: 170px;
+    max-width: 70%;
+    height: 200px;
     margin: 20px auto;
 }
 
@@ -39,4 +39,12 @@
 .buttons-wrapper {
     display: flex;
     align-items: center;
+}
+
+.readmore-button, .edit-button {
+    background-color: rgba(1, 8, 102, 1);
+    color: white;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 4px;
 }
