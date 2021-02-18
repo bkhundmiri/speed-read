@@ -16,7 +16,6 @@ export default function Content (props) {
                 </div>
             </div>
 
-
             <div className="paragraph-wrapper">
                 <p className="paragraph">{props.read.fields.content}</p>
             </div>

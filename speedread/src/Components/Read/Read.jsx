@@ -8,7 +8,7 @@ export default function Read (props) {
     let foundRead = props.reads.find((read) => read.id === params.id);
 
     if (!foundRead) {
-        return <h4>wtf Loading....</h4>;
+        return <h4>Loading....</h4>;
     }
 
     const wordArr = foundRead.fields.content.split(" ")
@@ -18,7 +18,6 @@ export default function Read (props) {
         <div>
             <div>
                 <h1>Reading {foundRead.fields.title}</h1>
-                <h2>{foundRead.fields.title}</h2>
                 <p>{foundRead.fields.author}</p>
             </div>
             <div className="word-bank">

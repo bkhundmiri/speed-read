@@ -28,12 +28,12 @@ export default function Word (props) {
     return (
         <div>
             <div className="word-box"> 
-                <div className="word">
-                    {word}
+                <div className="word" onTouchStart={play} onClick={play}>
+                    <h5 style={{display: (triggerWord) ? "none" : "" , fontSize: "25px"}}>{triggerWord ? "" : "Click Here to Play"}</h5>
+                    <h2 style={{display: (triggerWord) ? "" : "none"}}>{word}</h2>
                 </div>
             </div>
-            <input type="range" min="150" max="850" step="25" value={speed} onChange={(e) => setSpeed(e.target.valueAsNumber)}/>
-            <button onClick={play}>{triggerWord ? "stop" : "play"}</button>
+            <input type="range" min="150" max="900" step="25" value={speed} onChange={(e) => setSpeed(e.target.valueAsNumber)}/>
         </div>
     )
 } 

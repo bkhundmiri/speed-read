@@ -42,10 +42,26 @@ textarea:focus {
     transition: 0.5s;
 }
 
-
-
 label {
     display: flex;
     align-self: flex-start;
     margin-left: 10px;
+}
+
+.add-button {
+    background-color: rgba(3, 22, 52, 1);
+    border: rgba(3, 22, 52, 1) 2px solid;
+    border-radius: 5px;
+    color: white;
+    height: 35px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.add-button:hover {
+    border: white 2px solid;
+    cursor: pointer;
 }

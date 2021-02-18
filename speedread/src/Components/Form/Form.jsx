@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { baseURL, config } from "../../Services";
 import "./Form.css";
+import Content from "../Content/Content"
 
-export default function Form(props) {
+export default function Form (props) {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [pages, setPages] = useState("");
@@ -47,8 +48,9 @@ export default function Form(props) {
       <h2>Add a New Excerpt</h2>
       <form className="input-form" onSubmit={handleSubmit}>
         <div className="input input-title">
-          <label for="title">Title: </label>
+          <label htmlFor="title">Title: </label>
           <input
+            required
             id="title"
             type="text"
             placeholder="Title of book..."
@@ -59,6 +61,7 @@ export default function Form(props) {
         <div className="input input-author">
           <label>Author: </label>
           <input
+            required
             type="text"
             placeholder="Author of book..."
             value={author}
@@ -68,6 +71,7 @@ export default function Form(props) {
         <div className="input input-pages">
           <label>Pages: </label>
           <input
+            required
             type="text"
             placeholder="How many pages..."
             value={pages}
@@ -77,6 +81,7 @@ export default function Form(props) {
         <div className="input input-content">
           <label>Content: </label>
           <textarea
+            required
             placeholder="Excerpt you would like to read..."
             title="content"
             id="content-textarea"
@@ -86,10 +91,13 @@ export default function Form(props) {
             onChange={(e) => setContent(e.target.value)}
           ></textarea>
         </div>
-        <div className="add-button">
-          <button type="submit">Add Reading</button>
-        </div>
+        <button type="submit" className="add-button">Book It</button>
       </form>
+      <div className="content-container">
+        {props.reads.map((read) => (
+            <Content key={read.id} read={read}/>
+        ))}
+      </div>
     </div>
   );
 }
