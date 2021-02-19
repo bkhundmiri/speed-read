@@ -22,7 +22,7 @@ when the word box is touched, the words start playing at the trigget state is up
 
 ## Documentation
 
-![Issue1](Assets/Issues/issue2.png)
+![Issue2](Assets/Issues/issue2.png)
 
 ## Attempted Resolution
 
