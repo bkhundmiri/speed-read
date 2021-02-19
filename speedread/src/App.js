@@ -4,9 +4,10 @@ import { baseURL, config } from "./Services/index"
 import './App.css';
 import 'normalize.css'
 import Navbar from "./Components/Navbar/Navbar"
-import Home from "./Components/Home/Home"
-import Form from "./Components/Form/Form"
-import Read from "./Components/Read/Read"
+import Home from "./Components/HomePage/Home"
+import Show from "./Components/ShowPage/Show"
+import Form from "./Components/FormPage/Form"
+import Read from "./Components/ReadPage/Read"
 import Footer from "./Components/Footer/Footer"
 import axios from 'axios';
 
@@ -45,6 +46,10 @@ function App() {
 
       <Route exact path="/">
         <Home reads={reads}/>
+      </Route>
+
+      <Route exact path="/showall">
+        <Show reads={reads} setToggleFetch={setToggleFetch}/>
       </Route>
 
       <Route path="/new">

@@ -14,7 +14,7 @@ nav {
 .pages {
     position: fixed;
     z-index: 3;
-    height: 250px;
+    height: 400px;
     top: 68px;
     right: -4px;
     background-color: rgb(16, 46, 95);
@@ -24,17 +24,21 @@ nav {
     border-radius: 7px;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     padding: 15px 0;
 }
 
 nav a {
-    font-size: 1.5em;
+    font-size: 25px;
     border-radius: 3px;
     text-decoration: none;
     color: white;
-    padding: 16px 30px;    
+    padding: 16px 30px;  
+    display: block;  
+    overflow: hidden;
+    display: -webkit-box;
+
 }
 
 nav a:hover {

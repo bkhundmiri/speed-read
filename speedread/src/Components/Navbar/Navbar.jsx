@@ -18,8 +18,9 @@ export default function Navbar(props) {
             <button className="openbtn" onClick={openPanel}>☰</button>
             <div className="pages" style={{ width: (togglePanel) ? "250px" : "0px" }}>
                 <Link to="/">Home</Link>
-                <Link to="/new">Add</Link>
-                <Link to={`/readrandom/${props.ranID}`} onClick={getNewRanID}>Read</Link>
+                <Link to="/showall">All Books</Link>
+                <Link to="/new">Add a New Book</Link>
+                <Link to={`/readrandom/${props.ranID}`} onClick={getNewRanID}>Read Something Random!</Link>
             </div>
         </nav>
     );

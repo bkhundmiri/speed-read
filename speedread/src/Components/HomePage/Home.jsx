@@ -1,4 +1,3 @@
-import Content from "../Content/Content"
 import "./Home.css"
 import { Link } from "react-router-dom"
 
@@ -12,7 +11,7 @@ export default function Home (props) {
                     <div className="info-wrapper">
                         <p className="app-info">A Revolutionized Way to Read</p>
                     </div>
-                    <a href="#content-container">
+                    <Link to="/showall">
                         {/* BOOK ANIMATION COURTESY OF https://freefrontend.com/css-book-effects/ & https://codepen.io/wwwebneko/pen/XjOZZK */}
                         <div className="book">
                             <span className="page turn"></span>
@@ -25,13 +24,8 @@ export default function Home (props) {
                             <span className="page"></span>
                             <span className="cover turn"></span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
-            </div>
-            <div id="content-container">
-                {props.reads.map((read) => (
-                    <Content key={read.id} read={read}/>
-                ))}
             </div>
         </div>
     )

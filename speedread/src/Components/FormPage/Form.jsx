@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { baseURL, config } from "../../Services";
 import "./Form.css";
-import Content from "../Content/Content"
 
 export default function Form (props) {
   const [title, setTitle] = useState("");
@@ -40,13 +39,14 @@ export default function Form (props) {
       await axios.post(baseURL, { fields }, config);
     }
     props.setToggleFetch((curr) => !curr);
-    history.push("/");
+    history.push("/showall");
   };
 
   return (
     <div className="form-container">
-      <div className="form-wrapper">
-        <h2>Add a New Excerpt</h2>
+      <div className="form-wrapper"></div>
+      
+        <h2 className="form-title-text">Add a New Excerpt</h2>
         <form className="input-form" onSubmit={handleSubmit}>
           <div className="input input-title">
             <label htmlFor="title">Title: </label>
@@ -94,7 +94,6 @@ export default function Form (props) {
           </div>
           <button type="submit" className="add-button">Book It</button>
         </form>
-      </div>
       {/* <div className="content-container">
         {props.reads.map((read) => (
             <Content key={read.id} read={read}/>
