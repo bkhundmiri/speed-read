@@ -44,60 +44,62 @@ export default function Form (props) {
   };
 
   return (
-    <div>
-      <h2>Add a New Excerpt</h2>
-      <form className="input-form" onSubmit={handleSubmit}>
-        <div className="input input-title">
-          <label htmlFor="title">Title: </label>
-          <input
-            required
-            id="title"
-            type="text"
-            placeholder="Title of book..."
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-        </div>
-        <div className="input input-author">
-          <label>Author: </label>
-          <input
-            required
-            type="text"
-            placeholder="Author of book..."
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-          />
-        </div>
-        <div className="input input-pages">
-          <label>Pages: </label>
-          <input
-            required
-            type="text"
-            placeholder="How many pages..."
-            value={pages}
-            onChange={(e) => setPages(e.target.value)}
-          />
-        </div>
-        <div className="input input-content">
-          <label>Content: </label>
-          <textarea
-            required
-            placeholder="Excerpt you would like to read..."
-            title="content"
-            id="content-textarea"
-            cols="20"
-            rows="10"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-          ></textarea>
-        </div>
-        <button type="submit" className="add-button">Book It</button>
-      </form>
-      <div className="content-container">
+    <div className="form-container">
+      <div className="form-wrapper">
+        <h2>Add a New Excerpt</h2>
+        <form className="input-form" onSubmit={handleSubmit}>
+          <div className="input input-title">
+            <label htmlFor="title">Title: </label>
+            <input
+              required
+              id="title"
+              type="text"
+              placeholder="Title of book..."
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </div>
+          <div className="input input-author">
+            <label>Author: </label>
+            <input
+              required
+              type="text"
+              placeholder="Author of book..."
+              value={author}
+              onChange={(e) => setAuthor(e.target.value)}
+            />
+          </div>
+          <div className="input input-pages">
+            <label>Pages: </label>
+            <input
+              required
+              type="text"
+              placeholder="How many pages..."
+              value={pages}
+              onChange={(e) => setPages(e.target.value)}
+            />
+          </div>
+          <div className="input input-content">
+            <label>Content: </label>
+            <textarea
+              required
+              placeholder="Excerpt you would like to read..."
+              title="content"
+              id="content-textarea"
+              cols="20"
+              rows="10"
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
+            ></textarea>
+          </div>
+          <button type="submit" className="add-button">Book It</button>
+        </form>
+      </div>
+      {/* <div className="content-container">
         {props.reads.map((read) => (
             <Content key={read.id} read={read}/>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

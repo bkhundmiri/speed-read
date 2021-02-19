@@ -24,16 +24,15 @@ export default function Word (props) {
         setTriggerWord((curr) => !curr)
     } 
 
-    // function setDarkMode () {
-    //     setToggleDark((curr) => !curr)
-    // }
+    function setDarkMode () {
+        setToggleDark((curr) => !curr)
+    }
 
     return (
         <div>
-            {/* <button className="readrandom-darkmode-button" onClick={setDarkMode}>{toggleDark ? 'Light Mode' : 'Dark Mode'}</button> */}
-            {/* className={`${!toggleDark ? 'light' : 'dark'} word`} */}
+            <button className="readrandom-darkmode-button" onClick={setDarkMode}>{toggleDark ? 'Light Mode' : 'Dark Mode'}</button>
             <div className="word-box"> 
-                <div onTouchStart={play} onClick={play}>
+                <div className={`${!toggleDark ? 'light' : 'dark'} word`} onClick={play}>
                     <h5 style={{display: (triggerWord) ? "none" : "" , fontSize: "25px"}}>{triggerWord ? "" : "Click Here to Play"}</h5>
                     <h2 style={{display: (triggerWord) ? "" : "none"}}>{word}</h2>
                 </div>

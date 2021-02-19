@@ -7,13 +7,15 @@ import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Form from "./Components/Form/Form"
 import Read from "./Components/Read/Read"
-import ReadRandom from "./Components/ReadRandom/ReadRandom"
 import Footer from "./Components/Footer/Footer"
 import axios from 'axios';
 
 function App() {
   const [reads, setReads] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false)
+  const [toggleRan, setToggleRan] = useState(false)
+  const [ranID, setRanID] = useState("")
+
 
   useEffect(() => {
     const getReads = async () => {
@@ -24,10 +26,22 @@ function App() {
     getReads()
   }, [toggleFetch])
 
+  useEffect(() => {
+    const getRanID = () => {
+        let max = reads.length;
+        let min = 0;
+        let i = Math.floor(Math.random() * (max - min)) + min;
+        if (reads[i]) {
+        setRanID(reads[i].id)
+        }
+    };
+    getRanID()
+},[toggleRan] )
+
   return (
     <div className="App">
       
-      <Navbar reads={reads}/>
+      <Navbar ranID={ranID} reads={reads} setToggleRan={setToggleRan}/>
 
       <Route exact path="/">
         <Home reads={reads}/>
@@ -37,8 +51,8 @@ function App() {
         <Form reads={reads} setToggleFetch={setToggleFetch}/>
       </Route>
 
-      <Route exact path="/read/random/:id">
-        <ReadRandom reads={reads} setToggleFetch={setToggleFetch}/>
+      <Route exact path="/readrandom/:id">
+        <Read reads={reads} ranID={ranID} setToggleFetch={setToggleFetch}/>
       </Route>
 
       <Route exact path="/read/:id">
