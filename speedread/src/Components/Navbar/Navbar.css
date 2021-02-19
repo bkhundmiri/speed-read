@@ -24,7 +24,7 @@ nav {
     border-radius: 7px;
     display: flex;
     flex-flow: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-evenly;
     padding: 15px 0;
 }
@@ -37,8 +37,6 @@ nav a {
     padding: 16px 30px;  
     display: block;  
     overflow: hidden;
-    display: -webkit-box;
-
 }
 
 nav a:hover {
