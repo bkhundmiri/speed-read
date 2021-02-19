@@ -1,6 +1,6 @@
 # Speed Read
 
-DEPLOYED URL HERE
+https://fervent-lumiere-5378ce.netlify.app/
 
 ## Project Description
 
