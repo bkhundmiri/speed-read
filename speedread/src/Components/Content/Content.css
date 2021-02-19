@@ -42,9 +42,23 @@
 }
 
 .readmore-button, .edit-button {
-    background-color: rgba(1, 8, 102, 1);
-    color: white;
-    padding: 10px 15px;
-    margin: 0 10px;
-    border-radius: 4px;
+	box-shadow:inset 0px 1px 0px 0px #3c9cfc;
+	background:linear-gradient(to bottom, #0271ad 5%, rgb(3,22,52) 100%);
+	background-color:#0271ad;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:9px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+    margin: 0 5px;
 }
+.readmore-button:hover, .edit-button:hover {
+	background:linear-gradient(to bottom, #002d4d 5%, #0271ad 100%);
+	background-color:#002d4d;
+}
+

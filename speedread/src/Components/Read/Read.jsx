@@ -15,7 +15,7 @@ export default function Read (props) {
     console.log(wordArr)
 
     return (
-        <div>
+        <div className="readpage-container">
             <div>
                 <h1>Reading {foundRead.fields.title}</h1>
                 <p>{foundRead.fields.author}</p>

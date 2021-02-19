@@ -1,6 +1,6 @@
 nav {
-    height: 80px;
-    width: 80px;
+    height: 3vh;
+    width: 100%;
     background-color: rgba(3, 22, 52, 1);
     display: flex;
     justify-content: flex-end;
@@ -31,6 +31,7 @@ nav {
 
 nav a {
     font-size: 1.5em;
+    border-radius: 3px;
     text-decoration: none;
     color: white;
     padding: 16px 30px;    
@@ -39,9 +40,11 @@ nav a {
 nav a:hover {
     background-color: #E8DDCB;
     color: rgba(3, 22, 52, 1);
+    transition: 0.5s;
 }
 
 .openbtn {
+    height: 80px;
     font-size: 35px;
     cursor: pointer;
     background-color: rgba(3, 22, 52, 1);

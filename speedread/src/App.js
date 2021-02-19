@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route } from "react-router-dom"
 import { baseURL, config } from "./Services/index"
 import './App.css';
+import 'normalize.css'
 import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Form from "./Components/Form/Form"

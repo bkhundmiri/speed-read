@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
 import "./Word.css"
 
 export default function Word (props) {
     const [word, setWord] = useState(" ")
     const [triggerWord, setTriggerWord] = useState(false)
+    const [toggleDark, setToggleDark] = useState(false)
     const [speed, setSpeed]  = useState(500)
-    const params = useParams()
     
     function displayWord () {
         setWord(props.wordArr.shift())
@@ -25,10 +24,16 @@ export default function Word (props) {
         setTriggerWord((curr) => !curr)
     } 
 
+    // function setDarkMode () {
+    //     setToggleDark((curr) => !curr)
+    // }
+
     return (
         <div>
+            {/* <button className="readrandom-darkmode-button" onClick={setDarkMode}>{toggleDark ? 'Light Mode' : 'Dark Mode'}</button> */}
+            {/* className={`${!toggleDark ? 'light' : 'dark'} word`} */}
             <div className="word-box"> 
-                <div className="word" onTouchStart={play} onClick={play}>
+                <div onTouchStart={play} onClick={play}>
                     <h5 style={{display: (triggerWord) ? "none" : "" , fontSize: "25px"}}>{triggerWord ? "" : "Click Here to Play"}</h5>
                     <h2 style={{display: (triggerWord) ? "" : "none"}}>{word}</h2>
                 </div>
