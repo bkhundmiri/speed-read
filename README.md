@@ -59,38 +59,37 @@ createdTime: "2021-02-16T00:20:11.000Z"
 
 ## Project Schedule
 
-| Day       | Deliverable                                | Status     |
-| --------- | ------------------------------------------ | ---------- |
-| Feb 12-16 | Proposal and Project Approval              | Incomplete |
-| Feb 17    | Skeleton of Routes and Links               | Incomplete |
-| Feb 18    | Incorporating API information              | Incomplete |
-| Feb 19    | CRUD Implementation and Content Layout     | Incomplete |
-| Feb 20    | CSS and Styling                            | Incomplete |
+| Day       | Deliverable                                | Status   |
+| --------- | ------------------------------------------ | -------- |
+| Feb 12-16 | Proposal and Project Approval              | Complete |
+| Feb 17    | Skeleton of Routes and Links               | Complete |
+| Feb 18    | Incorporating API information              | Complete |
+| Feb 19    | CRUD Implementation and Content Layout     | Complete |
+| Feb 20    | CSS and Styling                            | Complete |
 | Feb 22    | MVP Completion                             | Incomplete |
 
 ## Timeframes
 
 | Component                               | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Airtable setup                          |    H     |      1hr       |      ---      |     ---     |
-| Skeleton and Route/Link setup           |    H     |      1hr       |      ---      |     ---     |
-| Setting up Airtable API                 |    H     |      2hrs      |      ---      |     ---     |
-| Home Page content layout                |    H     |      1.5hrs    |      ---      |     ---     |
-| API Fetching Data                       |    H     |      1hr       |      ---      |     ---     |
-| API Create Operation                    |    H     |      2hrs      |      ---      |     ---     |
-| Form Page content layout                |    H     |      2hrs      |      ---      |     ---     |
-| API Read Operation                      |    H     |      1hr       |      ---      |     ---     |
-| Timing and interaction buttons          |    H     |      3hrs      |      ---      |     ---     |
-| 200 words per min timing setup          |    H     |      1hr       |      ---      |     ---     |
-| 400 words per min timing setup          |    H     |      1hr       |      ---      |     ---     |
-| 600 words per min timing setup          |    H     |      1hr       |      ---      |     ---     |
-| API Update Operation                    |    H     |      1.5hrs    |      ---      |     ---     |
-| API Delete Operation                    |    H     |      1.5hrs    |      ---      |     ---     |
-| Random content page layout              |    H     |      1.5hrs    |      ---      |     ---     |
-| Form interaction                        |    H     |      2hrs      |      ---      |     ---     |
-| CSS Styling and aesthetic content setup |    H     |      5hrs      |      ---      |     ---     |
-| Streamlining code and organization      |    H     |      2hrs      |      ---      |     ---     |
-| Total                                   |    H     |      33hrs     |      ---      |     ---     |
+| Airtable setup                          |    H     |      1hr       |      1hr      |     1hr     |
+| Skeleton and Route/Link setup           |    H     |      1hr       |      2hr      |     2hr     |
+| Setting up Airtable API                 |    H     |      2hrs      |      1hr      |     1hr     |
+| Home Page content layout                |    H     |      1.5hrs    |      2hr      |     2hr     |
+| API Fetching Data                       |    H     |      1hr       |      30min      |     30min     |
+| API Create Operation                    |    H     |      2hrs      |      30min      |     30min     |
+| Form Page content layout                |    H     |      2hrs      |      1hr      |     1hr     |
+| API Read Operation                      |    H     |      1hr       |      30min      |     30min     |
+| Timing and interaction buttons          |    H     |      3hrs      |      2hr      |     2hr     |
+| 200 words per min timing setup          |    H     |      1hr       |      1hr      |     1hr     |
+| 400 words per min timing setup          |    H     |      1hr       |      15min      |     15min     |
+| 600 words per min timing setup          |    H     |      1hr       |      15min      |     15min     |
+| API Update Operation                    |    H     |      1.5hrs    |      1hr      |     1hr     |
+| Random content page layout              |    H     |      1.5hrs    |      1hr      |     1hr     |
+| Form interaction                        |    H     |      2hrs      |      1hr      |     1hr     |
+| CSS Styling and aesthetic content setup |    H     |      5hrs      |      20hr      |     20hr     |
+| Streamlining code and organization      |    H     |      2hrs      |      1hr      |     1hr     |
+| Total                                   |    H     |      33hrs     |      36hrs      |     36hr     |
 
 ## SWOT Analysis
 
