@@ -57,3 +57,19 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
+
+@media all and (max-width: 600px) {
+    .openbtn {
+        height: 50px;
+        font-size: 25px;
+        width: 50px;
+    }
+    .pages {
+        height: 300px;
+        top: 48px;        
+    }
+    nav a {
+        font-size: 18px;
+        padding: 16px 10px;
+    }
+}

@@ -1,16 +1,15 @@
 
 .form-container {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
 .form-wrapper {
     background-image: url('https://images.unsplash.com/photo-1598620617377-3bfb505b4384?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
+    max-height: 100%;
+    max-width: 100%;
+    height: 120vh;
+    position: relative;
     top: 0;
     left: 0;
     opacity: 0.9;
@@ -22,19 +21,10 @@
     background-clip: content-box;
 }
 
-form {
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
 .form-title-text {
     margin: 0 auto;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.7);
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
@@ -42,9 +32,16 @@ form {
     width: 60%;
     padding: 20px;
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+form {
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -65%);
+    left: 50%;
 }
 
 .input-form {
@@ -53,8 +50,25 @@ form {
     display: flex;
     flex-flow: column nowrap;
     padding: 10px 0;
-    
     border-radius: 5px;
+}
+
+.input {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2; 
+    padding: 10px 20px 15px 20px;
+    margin: 10px;
+}
+
+.input-author, .input-pages {
+    border-bottom: none;
+}
+.input-author {
+    border-top: none;
 }
 
 input[type=text] {
@@ -62,35 +76,36 @@ input[type=text] {
     padding: 10px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid lightgrey; 
+    border: 3px solid lightgrey; 
     border-radius: 4px;
     outline: none;
 }
 
 input[type=text]:focus {
-    border: 2px solid #555;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    border: 3px solid black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 textarea {
     width: 90%;
     margin: 8px 0;
-    border: 2px solid lightgrey;
+    border: 3px solid lightgrey;
     border-radius: 4px;
     outline: none;
 }
 
 textarea:focus {
-    border: 2px solid #555;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    border: 3px solid black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 label {
     display: flex;
     align-self: flex-start;
     margin-left: 10px;
+    font-size: 20px;
 }
 
 .add-button {
@@ -98,12 +113,14 @@ label {
     border: rgba(3, 22, 52, 1) 2px solid;
     border-radius: 5px;
     color: white;
-    height: 35px;
-    width: 80px;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+
 }
 
 .add-button:hover {
@@ -113,14 +130,41 @@ label {
 
 @media all and (max-width: 600px) {
     .input-form {
-        width: 100%;
+        width: 100%
     }
-
+    .input {
+        padding: 10px;
+        margin: 5px;
+    }
+    form {
+        transform: translate(-50%, -75%);
+    }
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+@media all and (max-height: 1060px) {
+    .input-form{
+        width: 90%;
+    }
+    form {
+        top: 60%;
+    }
+}
+
+@media all and (max-height: 800px) {
+    form {
+        top: 70%;
+    }
+}
+
+@media all and (max-height: 600px) {
+    form {
+        top: 90%;
+    }
+}
+
+/* @media screen and (max-width: 1024px) {
     .form-wrapper {
         left: 50%;
-      margin-left: -512px;   /* 50% */
+        margin-left: -50%;
     }
-}
+} */

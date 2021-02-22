@@ -1,8 +1,30 @@
 .word-bank {
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .readpage-container {
     height: 100vh;
+    position: relative;
+    background-color: lightblue;
+}
+
+.read-title-author {
+    margin: 0 auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2; 
+    width: 60%;
+    padding: 0 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

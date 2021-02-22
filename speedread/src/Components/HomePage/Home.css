@@ -164,3 +164,24 @@
         100% {  transform: rotateY(30deg);
         z-index: 999;}
     }
+
+@media all and (max-width: 600px) {
+    .book {
+        top: 220%;
+        width: 16.5rem;
+        height: 10.5rem;
+        left: 55%;
+    }
+    .cover {
+        width: 7.25rem;
+        height: 10.5rem;
+    }
+    .page {
+        width: 7rem;
+        height: 10rem;
+    }
+    .app-title-text {
+        width: 80%;
+        top: 30%;
+    }
+}

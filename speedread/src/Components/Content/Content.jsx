@@ -11,11 +11,10 @@ export default function Content (props) {
                     <p className="author">{props.read.fields.author}</p>
                 </div>
                 <div className="buttons-wrapper">
-                    <Link to={`/read/${props.read.id}`}><button className="readmore-button">Read More</button></Link>
+                    <Link to={`/read/${props.read.id}`}><button className="readmore-button">Read</button></Link>
                     <Link to={`/edit/${props.read.id}`}><button className="edit-button">Edit</button></Link>
                 </div>
             </div>
-
             <div className="paragraph-wrapper">
                 <p className="paragraph">{props.read.fields.content}</p>
             </div>

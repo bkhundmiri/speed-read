@@ -4,6 +4,7 @@
     max-width: 70%;
     height: 200px;
     margin: 20px auto;
+    box-shadow: -10px 10px 17px -7px #003ffa;
 }
 
 .paragraph {
@@ -25,6 +26,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
+    grid-area: header;
 }
 
 .title {
@@ -39,6 +41,11 @@
 .buttons-wrapper {
     display: flex;
     align-items: center;
+    grid-area: buttons;
+}
+
+.paragraph-wrapper {
+    grid-area: paragraph;
 }
 
 .readmore-button, .edit-button {
@@ -62,3 +69,28 @@
 	background-color:#002d4d;
 }
 
+@media all and (max-width: 600px) {
+    .read-container {
+        max-width: 90%;
+    }
+    .title-author-wrapper {
+        max-width: 50%;
+    }
+    .title {
+        font-size: 17px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .author {
+        font-size: 15px;
+    }
+    .paragraph {
+    -webkit-line-clamp: 5;
+    }
+    .readmore-button {
+        font-size: 12px;
+    }
+    .edit-button {
+        font-size: 12px;
+    }
+}

@@ -32,12 +32,14 @@ function App() {
         let max = reads.length;
         let min = 0;
         let i = Math.floor(Math.random() * (max - min)) + min;
-        if (reads[i]) {
-        setRanID(reads[i].id)
+        if (!reads[i]) {
+          return
+        } else {
+          setRanID(reads[i].id)
         }
     };
     getRanID()
-},[toggleRan] )
+},[toggleRan, reads] )
 
   return (
     <div className="App">
