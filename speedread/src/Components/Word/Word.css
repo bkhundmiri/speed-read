@@ -1,23 +1,51 @@
 .word-box {
-    height: 400px;
-    width: 400px;
-    background-color: white;
-    border: 2px solid rgba(3, 22, 52, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border: 2px solid rgba(3, 22, 52, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}ß
 
 .word {
-    font-size: 30px;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dark {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 450px) {
+    .word-box {
+        height: 350px;
+        width: 350px;
+    }
+}
+@media all and (max-width: 350px) {
+    .word-box {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+  .word-box {
+    height: 600px;
+    width: 600px;
+  }
+  .word {
+    font-size: 35px;
+  }
 }

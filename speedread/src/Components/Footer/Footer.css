@@ -1,7 +1,61 @@
 footer {
-    height: 7vh;
+    height: 100%;
+}
+
+.page-footer {
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-evenly;
+    background-color: rgb(4, 38, 92);
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+h5 {
+    font-size: 15px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(3, 22, 52, 1);
     color: white;
+    height: 40px;
+}
+
+.footer-social {
     display: flex;
-    justify-content: flex-start;
+    flex-flow: column;
+}
+
+.footer-social h5 {
+    margin-bottom: 0px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 10px;
+}
+
+@media all and (max-width: 600px) {
+    .row {
+        flex-flow: column nowrap;
+    }
 }
