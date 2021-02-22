@@ -1,6 +1,6 @@
 # Speed Read
 
-https://fervent-lumiere-5378ce.netlify.app/
+https://speed-read.netlify.app
 
 ## Project Description
 
